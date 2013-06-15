@@ -1,0 +1,576 @@
+/*
+Theme Name: NYCGA Theme
+Theme URI: http://nycga.net
+Description: A bones/Zurb foundation based child theme.
+Version: 1.0
+Author: OWS
+Author URI: http://occupywallstreet.net
+Tags: bones, zurb, foundation, 320press, clean, basic
+Template:	wp-foundation
+*/
+
+/*button color*/
+
+
+@import url("../wp-foundation/style.css");
+@import url("library/fonts/League-Gothic/stylesheet.css");
+
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5 {
+	font-family: 'LeagueGothicRegular', 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+h1, h2, h3,
+h4.subhead, h4.widgettitle {
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: 44px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+.siteinfo h1,
+.siteinfo h1 a { 
+	color: #000;
+	font-size: 65px;
+    font-weight: 300;
+    line-height: 0.9;
+}
+
+h4.subhead {
+	font-size: 35px;
+    line-height: 0.5;
+}
+
+/* NAV BAR */
+
+.nav-bar > li,
+.nav-bar > li > a:first-child, 
+.nav-bar > li:last-child {
+	border: none;
+		-moz-border: none;
+	box-shadow: none;
+	font-family: 'LeagueGothicRegular', 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-size: 26px;
+	text-transform: uppercase;;
+}
+
+.top-nav ul.flyout,
+.top-nav ul.flyout a {
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.nav-bar > li:hover  {
+	background: #dfb200;
+}
+
+.nav-bar > li.active,
+.nav-bar > li.active a,
+ul.flyout li a:hover, 
+.nav-bar li ul li a:hover,
+ul.flyout li.active a, 
+.nav-bar li ul li.active a {
+	background: #fc0 !important;
+	border: none;
+	color: #222 !important;
+}
+
+.nav-bar > li.has-flyout > a:first-child:after {
+	border-color: #222 transparent transparent;
+}
+
+.nav-bar a.flyout-toggle span {
+	/*color: #333;*/
+}
+
+/* FOOTER */
+
+footer div.twelve.columns {
+	margin-top: 25px;
+	border-top: 4px solid #000;
+	/*background: #F2F2F2;*/
+}
+
+footer div.twelve.columns:last-child {
+	/*padding-top: 15px;
+	margin-top: 15px;
+	border-top: 4px solid #000;*/
+	background: #fc0;
+}
+
+footer div.twelve.columns p:first-child {
+	padding-top: 15px;
+}
+
+body.page section.post_content div {
+	float: none;
+}
+
+footer img.inline-image {
+	margin: 0;
+}
+
+/* HOMEPAGE SLIDER */
+
+div.slider-wrapper {
+	background-color: #F2F2F2;
+}
+
+#featured h3, 
+#featured p {
+	width: 75%;
+}
+
+#featured h3 {
+	margin-top: 1em;
+}
+
+/* EVENTS */
+
+/* HOME PAGE featured events */
+
+body.home div.featured-events h3,
+body.home div.featured-events h4.event-title {
+	margin-top: 0;
+}
+
+body.home div.featured-events h4.event-title {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+body.home div.row div#content div#main.twelve div.top-row div.four section.row div.featured-events div.events-list div.events-row div.event-details h3.event-title {}
+
+body.home div.featured-events div.events-list span.edit-link {
+	display: none;
+}
+
+body.home div.featured-events table.event-table td {
+	border: none;
+	background: transparent;
+	background-color: none;
+}
+
+body.home div.featured-events div.events-list div.events-row {
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+body.home div.featured-events div.events-list div.events-row:last-child {
+	border-bottom: none;
+}
+
+body.home div.featured-events div.event-location {
+	line-height: 1.2;
+}
+
+body.home div.featured-events div.event-location a:before {
+	content: '@';
+}
+
+body.home div.featured-events div.event-start {
+
+}
+
+body.home div.featured-events div.event-thumbnail img {
+	width: 100px;
+	height: auto;
+}
+
+body.home div.featured-events div.events-row div.event-start {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+body.home div.featured-events div.events-list div.event-start div {
+	display: inline;
+}
+
+body.home div.featured-events div.events-list div.event-details {
+	float: left;
+	width: 70%;
+}
+body.home div.featured-events div.events-list div.event-meta {
+	float: right;
+	width: 25%;
+}
+
+/* EVENTS LISTING */
+
+div#em-wrapper div.events-list div.events-row {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+/*columns*/
+div#em-wrapper div.events-list  div.event-start {
+	font-size: 1.75em;
+	font-weight: 700;
+	width: 125px;
+	float: left;
+	line-height: 1.25;
+	padding-right: 20px;
+}
+
+div#em-wrapper div.events-list div.event-details {
+	/*width: 50%;*/
+	float: left;
+	width: 50%;
+	/*width: auto;*/
+	padding-right: 20px;
+}
+
+div#em-wrapper div.events-list div.event-location {
+	line-height: 1.4;
+}
+
+div#em-wrapper div.events-list  div.event-meta {
+	width: 145px;
+	float: left;
+}
+
+div#em-wrapper div.events-list div.event-meta div.event-thumbnail img {
+	width: 95px;
+	height: auto;
+}
+
+div#em-wrapper div.events-list h3.event-title,
+div#em-wrapper div.events-list h4.event-title {
+	margin-top: 0;
+}
+
+div.em-events-search form.em-events-search-form input[type="text"],
+div.em-events-search form.em-events-search-form select#category.em-events-search-category {
+	width: 125px;
+	display: inline;
+}
+
+/*Events Category LISTING*/
+
+ul.event-categories,
+ul.event-tags {
+	list-style: none;
+}
+	.event-categories li,
+	.event-tags .tagcloud,
+	.event-categories .tagcloud,
+	.tagcloud .event-categories {
+	    display: inline;
+	}
+
+	.event-categories .event-item,
+	.event-tags .event-item {
+		display: block;
+	    border-bottom: 1px solid #CCCCCC;
+	    padding-bottom: 15px;
+	    padding-top: 15px;
+	}
+
+	.event-tags .event-item .event-name {
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+
+		.event-categories .tagcloud a,
+		.tagcloud .event-categories a,
+		.event-tags .tagcloud a {
+		    bottom: 1px;
+		    color: #000;
+		    background-color: #ccc;
+		    font-size: 12px;
+		    line-height: 1;
+		    padding: 1px 4px 2px;
+		    position: relative;
+		    text-align: center;
+		    text-decoration: none;
+		    white-space: nowrap;
+		    border-radius: 3px 3px 3px 3px;
+		}
+
+	.event-tags .event-address:before,
+	.event-tags .event-location-details:before,
+	.event-categories .event-address:before,
+	.event-categories .event-location-details:before {
+		content: " - ";
+	}
+
+/* EVENT DETAILS */
+
+body.single-event div.event-content {
+	float: right;
+}
+
+.em-location-map, .em-locations-map { 
+	width: 300px !important; 
+	height: 300px !important; 
+}
+
+body.single-event div.event-content div.event-thumbnail img {
+	float: right;
+	width: 320px;
+	height: auto;
+}
+
+.button {
+    background: none repeat scroll 0 0 #fc0;
+    border: 1px solid #ccc;
+    color: #4d4d4d;
+}
+
+.button:hover {
+	background: none repeat scroll 0 0 #4d4d4d;
+	color: #fff;
+}
+
+/* EVENT LISTING WIDGET */
+
+.widget .textwidget div.events-list div.events-row {
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.widget .textwidget div.events-list div.event-start div  {
+	display: inline;
+}
+
+.widget .textwidget div.events-list h4.event-title {
+	margin-bottom: 5px;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif !important;
+	font-size: 16px;
+	line-height: 1.4 !important;
+}
+
+.widget .textwidget div.events-list div.event-meta {
+	display: none;
+}
+
+
+/* BLOGS */
+
+.blogs-list ul,
+.blogs-list li {
+	list-style: none;
+}
+
+.blogs-list ul li {
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.blogs-list li p:last-child,
+.blogs-list li br {
+	display: none;
+}
+
+.blogs-list li p {
+	margin-bottom: 0;
+}
+
+.blogs-list .blog-name {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.blogs-list ul li b a {
+	font-weight: normal;
+}
+
+.rss-date,
+.post-meta,
+ul.blogs-list li p.post-meta,
+.tm_lcptu_post_date {
+	font-style: italic;
+}
+
+.rss-date {
+	display: block;
+}
+
+
+div.blogs-directory-wrapper table.blogs_directory_table {
+	width: 100%;
+}
+
+/* NEWS PAGE*/
+
+body.category-news img.attachment-bones-thumb-300 {
+	width: 120px;
+	height: auto;
+	float: right;
+	border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: block;
+    line-height: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+}
+
+/* PAGE LIST */
+/*mimic p tag style*/
+div.page-list div.page-list-ext-item-content {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 17px;
+}
+
+div.really_simple_share div,
+div.really_simple_share div.really_simple_share_twitter,
+div.really_simple_share div.really_simple_share_facebook_like,
+div.really_simple_share div.really_simple_share_facebook_like_send {
+	display: inline-block;
+}
+
+div.really_simple_share div.really_simple_share_twitter,
+div.really_simple_share div.really_simple_share_facebook_like,
+div.really_simple_share div.really_simple_share_facebook_like_send {}
+
+/* WIDGETS */
+
+div.sidebar div.widget ul,
+footer .widget ul li  {
+	list-style: none;
+}
+
+div.sidebar div.widget ul ul {}
+
+div.sidebar div.widget ul li,
+footer .widget ul li {
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+div.sidebar div.widget ul li:first-child,
+footer .widget ul li:first-child {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+div.sidebar div.widget ul li:last-child,
+footer .widget ul li:last-child,
+div.sidebar div.widget ul li li {
+	border-bottom: none;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.sidebar .widget.widget_wp_sidebarlogin {
+	margin-bottom: 25px;
+}
+
+/*featured network posts*/
+body.home div.nlposts-container h2.nlposts-ulist-wtitle {
+	font-size: 24px;
+	margin-top: 0;
+	/*margin-bottom: 0;*/
+	line-height: inherit;
+	color: inherit;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	text-transform: uppercase;
+}
+
+div.nlposts-container ul {
+	list-style: none;
+}
+
+body.home div.nlposts-container div.thumbnail a img {
+	float: right;
+	width: 130px;
+	height: auto;
+}
+
+body.home div.nlposts-container span.nlposts-ulist-meta {
+	color: #333;
+	font-size: .9em;
+}
+
+/*Network Latest Posts Styles*/
+
+.widget div.nlposts-ulist-pagination {
+	display: none;
+}
+.widget li.nlposts-ulist-litem {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+.widget h2.nlposts-ulist-wtitle {
+	margin-bottom: 14px;
+	padding-bottom: 0;
+	font-size: 23px;
+	line-height: 1.1;
+	color: #222222;
+	font-weight: inherit;
+    letter-spacing: inherit;
+}
+
+/*add padding in footer only*/
+footer .widget h2.nlposts-ulist-wtitle {
+	/*margin-top: 14px !important;*/
+}
+
+.widget .nlposts-ulist-title,
+.widget .nlposts-ulist-title a,
+.widget .tm_lcptu_post_title,
+.widget .tm_lcptu_post_title a,
+h4.tm_lcptu_post_title {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	line-height: 1.5;
+	text-transform: none;
+	font-size: 16px;
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.widget div.tb_tweetlist {
+	border-bottom: none;
+}
+
+.widget div.tb_tweet {
+	border-top: none;
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 1.2;
+	color: #222222;
+	font-weight: inherit;
+    letter-spacing: inherit;
+}
+
+.widget div.tb_tweet:first-child {
+	padding-top: 0; 
+}
+
+.widget span.tb_tweet-info a {
+	color: #2BA6CB;
+}
+
+
+
+
+
+
+
+
